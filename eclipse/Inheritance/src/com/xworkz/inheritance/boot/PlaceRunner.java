@@ -46,5 +46,6 @@ public class PlaceRunner {
 		Object bengaluru7=new Bengaluru();
 
 	}
+	
 
 }
