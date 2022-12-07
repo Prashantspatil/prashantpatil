@@ -6,7 +6,6 @@ public class Vowel_Consonant {
 		
 		String name="abcdefghijklmnopqrstuvwxyz";
 		int vCount=0,cCount=0;
-		name=name.toLowerCase();
 		for(int i=0;i<name.length();i++) {
 			if(name.charAt(i)=='a'||name.charAt(i)=='e'||name.charAt(i)=='i'||
 					name.charAt(i)=='o'||name.charAt(i)=='u') {
