@@ -33,6 +33,8 @@ import javax.management.BadAttributeValueExpException;
 import javax.management.RuntimeErrorException;
 
 import org.omg.CORBA.portable.InputStream;
+import org.omg.CORBA.UserException;
+import org.omg.CORBA.portable.ApplicationException;
 import org.omg.CORBA.portable.RemarshalException;
 
 import com.sun.corba.se.impl.orbutil.threadpool.TimeoutException;
@@ -46,6 +48,8 @@ import com.sun.xml.internal.ws.util.RuntimeVersion;
 
 import jdk.internal.org.xml.sax.SAXException;
 import jdk.nashorn.internal.ir.RuntimeNode;
+import jdk.internal.dynalink.support.RuntimeContextLinkRequestImpl;
+import jdk.nashorn.internal.runtime.events.RuntimeEvent;
 
 import javax.management.RuntimeMBeanException;
 import javax.management.RuntimeOperationsException;
@@ -65,6 +69,7 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.validation.SchemaFactoryConfigurationError;
 import javax.xml.ws.WebServiceException;
 import javax.security.auth.callback.UnsupportedCallbackException;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.security.auth.RefreshFailedException;
 import javax.security.auth.callback.Callback;
@@ -156,7 +161,7 @@ public class CreateEvents {
 	
 	public void runtimeMethod16() {
 		System.out.println("running method16");
-		throw new RuntimePermission(" "," ");
+		throw new RuntimePermission(" ", " ");
 	}
 	
 	public void runtimeMethod17() {
@@ -211,7 +216,7 @@ public class CreateEvents {
 	
 	public void runtimeMethod27() {
 		System.out.println("running method27");
-		throw new IndexOutOfBoundException();
+		throw new IndexOutOfBoundsException();
 	}
 	
 	public void runtimeMethod28() {
@@ -267,7 +272,7 @@ public class CreateEvents {
 	
 	public void exceptionMethod4() throws AWTException{
 		System.out.println("running exceptionmethod4");
-		throw new AWTException();
+		throw new AWTException(String);
 	}
 	
 	public void exceptionMethod5(){
@@ -340,9 +345,9 @@ public class CreateEvents {
 		throw new UnsupportedFlavorException(DataFlavor);
 	}
 	
-	public void exceptionMethod19(CallBack CallBack) throws UnsupportedCallBackException{
+	public void exceptionMethod19(Callback Callback) throws UnsupportedCallbackException{
 		System.out.println("running exceptionmethod19");
-		throw new UnsupportedCallBackException(CallBack);
+		throw new UnsupportedCallbackException(Callback);
 	}
 	
 	public void exceptionMethod20() throws UnsupportedAudioFileException{
@@ -362,7 +367,7 @@ public class CreateEvents {
 	
 	public void exceptionMethod23() throws TransformerException{
 		System.out.println("running exceptionmethod23");
-		throw new TransformerException();
+		throw new TransformerException(String);
 	}
 	
 	public void exceptionMethod24() throws TooManyListenersException{
