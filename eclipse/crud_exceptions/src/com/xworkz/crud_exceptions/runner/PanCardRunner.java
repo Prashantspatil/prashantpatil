@@ -18,6 +18,7 @@ public class PanCardRunner {
 		cardRepository.linking("DYWPP3410Y");
 		cardRepository.linking("DYWPP3410U");
 		cardRepository.linking("DYWPP3410O");
+		cardRepository.linking("DYWPP3410K");
 		System.out.println(System.lineSeparator());
 		System.out.println(cardRepository.total());
 
