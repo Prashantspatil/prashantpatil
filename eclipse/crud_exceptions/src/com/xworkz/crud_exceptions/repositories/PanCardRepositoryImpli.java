@@ -11,7 +11,9 @@ public class PanCardRepositoryImpli implements PanCardRepository{
 	public boolean linking(String card) {
 		System.out.println("running the linking : ");
 		if(this.panCardIndex>this.panCards.length) {
+			if(this.panCardIndex>this.panCards.length) {
 			throw new PanSizeExceededException();
+		}
 		}
 		this.panCards[panCardIndex]=card;
 		panCardIndex++;
@@ -21,6 +23,8 @@ public class PanCardRepositoryImpli implements PanCardRepository{
 	@Override
 	public int total() {
 		return PanCardRepository.super.total();
+		//System.out.println("running total");
+		//return this.panCardIndex;
 	}
 
 }

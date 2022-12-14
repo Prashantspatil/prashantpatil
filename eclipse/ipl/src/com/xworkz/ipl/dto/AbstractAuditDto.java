@@ -1,8 +1,9 @@
 package com.xworkz.ipl.dto;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public abstract class AbstractAuditDto {
+public abstract class AbstractAuditDto implements Serializable{
 	
 	private String createdBy;
 	private LocalDateTime createdDate;

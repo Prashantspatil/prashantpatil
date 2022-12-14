@@ -17,9 +17,9 @@ public class IplRepositoryImpl implements IplRepository{
 	}
 	
 	this.iplDtos[this.currentIndex]=dto;
-	this.currentIndex++;
 	System.out.println("Saved " +dto + "in index " +this.currentIndex);
-	return false;
+	this.currentIndex++;
+	return true;
 	}
 	
 	

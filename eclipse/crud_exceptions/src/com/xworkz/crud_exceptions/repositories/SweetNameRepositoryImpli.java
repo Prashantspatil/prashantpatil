@@ -22,6 +22,7 @@ public class SweetNameRepositoryImpli implements SweetNameRepository{
 	public int totalSweets() {
 		System.out.println("running totalSweets()");
 		return SweetNameRepository.super.totalSweets();
+		//return this.sweetIndex;
 	}
 
 }
