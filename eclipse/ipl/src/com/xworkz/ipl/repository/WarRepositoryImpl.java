@@ -39,6 +39,7 @@ public class WarRepositoryImpl implements WarRepository{
 		for (WarDto warDto : wars) {
 			if(warDto!=null && warDto.getStartedBy().equalsIgnoreCase(startedBy)) {
 				System.out.println("warDto is present" + startedBy);
+				return warDto;
 			}
 		}
 		System.out.println("warDto is not present");
@@ -51,6 +52,7 @@ public class WarRepositoryImpl implements WarRepository{
 		for (WarDto warDto : wars) {
 			if(warDto!=null && warDto.getStartedBy().equalsIgnoreCase(startedBy)&& warDto.getStartedWith().equalsIgnoreCase(startedWith)) {
 				System.out.println("warDto exist" + startedBy + startedWith);
+				return warDto;
 			}
 		}
 		System.out.println("warDto not found");
@@ -63,6 +65,7 @@ public class WarRepositoryImpl implements WarRepository{
 		for (WarDto warDto : wars) {
 			if(warDto!=null && warDto.getStartedIn().isAfter(startedIn)) {
 				System.out.println("warDto is found" + startedIn);
+				return warDto;
 			}
 		}
 		System.out.println("warDto is not found & is greaterthan/lesserthan given date");
@@ -75,6 +78,7 @@ public class WarRepositoryImpl implements WarRepository{
 		for (WarDto warDto : wars) {
 			if(warDto!=null && warDto.getStartedIn().isBefore(startedIn)) {
 				System.out.println("warDto is found" + startedIn);
+				return warDto;
 			}
 		}
 		System.out.println("warDto is not found & is greaterthan/lesserthan given date");
@@ -87,6 +91,7 @@ public class WarRepositoryImpl implements WarRepository{
 		for (WarDto warDto : wars) {
 			if(warDto!=null) {
 				System.out.println("warDto is found" + startedIn + endedIn);
+				return warDto;
 			}
 		}
 		System.out.println("warDto is not found");

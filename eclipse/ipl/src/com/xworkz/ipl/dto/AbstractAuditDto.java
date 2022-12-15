@@ -14,6 +14,14 @@ public abstract class AbstractAuditDto implements Serializable{
 		System.out.println("calling default constructor of AbstractAuditDto");
 	}
 	
+	public AbstractAuditDto(String createdBy, LocalDateTime createdDate, String updatedBy, LocalDateTime updatedDate) {
+		super();
+		this.createdBy = createdBy;
+		this.createdDate = createdDate;
+		this.updatedBy = updatedBy;
+		this.updatedDate = updatedDate;
+	}
+	
 	@Override
 	public String toString() {
 		return "AbstractAuditDto [createdBy=" + createdBy + ", createdDate=" + createdDate + ", updatedBy=" + updatedBy

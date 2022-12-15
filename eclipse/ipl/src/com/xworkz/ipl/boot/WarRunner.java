@@ -15,7 +15,7 @@ public class WarRunner {
 				LocalDateTime.of(2020, 2, 14, 9, 00), 50);
 		repository.create(war);
 		System.out.println(repository.total());
-		WarDto dto = repository.findByStartedBy("pak");
+		WarDto dto = repository.findByStartedBy("china");
 		System.out.println(dto);
 		System.out.println("\n");
 		WarDto dto2 = repository.findByStartedByAndStartedWith("pak", "bharat");
