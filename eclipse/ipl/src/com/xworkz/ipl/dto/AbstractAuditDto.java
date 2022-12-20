@@ -5,10 +5,10 @@ import java.time.LocalDateTime;
 
 public abstract class AbstractAuditDto implements Serializable{
 	
-	private String createdBy;
-	private LocalDateTime createdDate;
+	private String createdBy="system";
+	private LocalDateTime createdDate=LocalDateTime.now();
 	private String updatedBy;
-	private LocalDateTime updatedDate;
+	private LocalDateTime updatedDate=LocalDateTime.now();
 	
 	public AbstractAuditDto() {
 		System.out.println("calling default constructor of AbstractAuditDto");
