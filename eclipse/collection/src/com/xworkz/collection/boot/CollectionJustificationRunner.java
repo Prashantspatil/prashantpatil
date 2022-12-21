@@ -1,6 +1,7 @@
 package com.xworkz.collection.boot;
 
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class CollectionJustificationRunner {
@@ -34,9 +35,14 @@ public class CollectionJustificationRunner {
 		String currency24="won";
 		String currency25="som";
 		String currency26="kip";
+		String currency27="";
+		String currency28=null;
 		
 		Collection<String> collection=new LinkedList<String>();
 		
+		System.out.println(collection.add(currency28));//added & accessed
+		System.out.println(collection.add(currency27));//added & accessed
+		System.out.println(collection.add(currency26));
 		System.out.println(collection.add(currency26));
 		System.out.println(collection.add(currency25));
 		System.out.println(collection.add(currency24));
@@ -65,6 +71,15 @@ public class CollectionJustificationRunner {
 		System.out.println(collection.add(currency1));//return-type add method in collection is boolean
 		
 		System.out.println("total currencies in collection : "+collection.size());
+		for (String string : collection) {
+			System.out.println(string);
+		}
+		Iterator<String> iterator=collection.iterator();
+		System.out.println("accessed through iterator");
+		while (iterator.hasNext()) {
+			String string = (String) iterator.next();
+			System.out.println(string);
+		}
 		collection.clear();
 		System.out.println(System.lineSeparator());
 		
