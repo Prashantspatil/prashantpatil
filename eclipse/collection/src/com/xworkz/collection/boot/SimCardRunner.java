@@ -9,7 +9,7 @@ public class SimCardRunner {
 	public static void main(String[] args) {
 		
 		Collection<String> cards=new ArrayList<String>();
-		cards.add("airtel");
+		cards.add("taat");
 		cards.add("jio");
 		cards.add("aircell");
 		cards.add("docomo");
@@ -30,12 +30,17 @@ public class SimCardRunner {
 		System.out.println("contains : "+contain1);//returns true
 		System.out.println(System.lineSeparator());
 		
-		for (String string : cards) {
-			if(string.startsWith("a")){//case-sensitive
-				cards.remove("a");
-				
+		Iterator<String> palindrome=cards.iterator();
+		while (palindrome.hasNext()) {
+			String string = (String) palindrome.next();
+			StringBuilder element=new StringBuilder(string);
+			element.reverse();
+			String str=element.toString();
+			if(string.equals(str)) {
+				System.out.println("palindrome : "+element);
 			}
 		}
+		
 		System.out.println("size : "+cards);
 		Iterator<String> sims=cards.iterator();
 		while (sims.hasNext()) {
