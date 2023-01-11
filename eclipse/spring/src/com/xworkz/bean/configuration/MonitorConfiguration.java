@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 @ComponentScan("com.xworkz.bean")
 public class MonitorConfiguration {
@@ -15,6 +16,9 @@ public class MonitorConfiguration {
 	public MonitorConfiguration() {
 		System.out.println("running MonitorConfiguration");
 	}
+	
+	
+
 	
 	@Bean
 	public String dell() {
