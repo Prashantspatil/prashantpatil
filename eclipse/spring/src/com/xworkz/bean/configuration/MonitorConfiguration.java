@@ -62,14 +62,14 @@ public class MonitorConfiguration {
 		return boo;
 	}
 	
-	@Bean
+	@Bean("classPencil")
 	public Boolean pencil() {
 		System.out.println("creayed pencil");
 		Boolean boo=new Boolean(true);
 		return boo;
 	}
 	
-	@Bean
+	@Bean("classRubber")
 	public Boolean rubber() {
 		System.out.println("creayed rubber");
 		Boolean boo=new Boolean(true);
