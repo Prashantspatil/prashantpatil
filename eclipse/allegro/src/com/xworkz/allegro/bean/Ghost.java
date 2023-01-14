@@ -1,7 +1,6 @@
 package com.xworkz.allegro.bean;
 
 import java.time.LocalDate;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,7 +42,8 @@ public class Ghost {
 	
     @Autowired
 	public Ghost(@Qualifier("ghostDOB") LocalDate dob,@Qualifier("ghostDOD") LocalDate dod,@Qualifier("ghostQualification") String qualification,@Qualifier("ghostCollege") String college,@Qualifier("ghostFriend") String friend,@Qualifier("ghostArea") String area,
-			@Qualifier("ghostPinCode")long pinCode,@Qualifier("ghostDangerous") boolean dangerous,@Qualifier("ghostTime") String time,@Qualifier("ghostCommitted") boolean committed) {
+			@Qualifier("ghostPinCode")long pinCode,@Qualifier("ghostDangerous") boolean dangerous,@Qualifier("ghostTime") String time,@Qualifier("ghostCommitted"
+					+ "") boolean committed) {
 		super();
 		this.dob = dob;
 		this.dod = dod;
@@ -56,8 +56,6 @@ public class Ghost {
 		this.time = time;
 		this.committed = committed;
 	}
-
-
 
 	@Override
 	public String toString() {
