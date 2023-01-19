@@ -9,7 +9,7 @@ public class SoldierRunner {
 
 	public static void main(String[] args) {
 		
-		SoldierDTO soldierDTO=new SoldierDTO("bipin rawat", 65, "4-star", "chief of defence staff");
+		SoldierDTO soldierDTO=new SoldierDTO("bipin rawat", 75, "4-star", "chief of defence staff");
 		SoldierServiceImpl serviceImpl=new SoldierServiceImpl();
 		SoldierRepository repository=new SoldierRepositoryImpl();
 		serviceImpl.setterSoldierRepository(repository);
