@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-light bg-dark">
+<nav class="navbar navbar-light bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"> <img
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
@@ -22,34 +22,28 @@
 			</a> <a href="index.jsp">home</a>
 		</div>
 	</nav>
-	<h1>page to send food item</h1>
-	<form action="send" method="get">
+	<h1>page to attend interview</h1>
+	<form action="attend" method="post">
 		<div class="mb-3">
-			<label for="foodItemName" class="form-label">Food_Item_Name</label> <input
-				type="text" class="form-control" id="" placeholder="enter foodItemName" name="name">
+			<label for="attendeeName" class="form-label">Name</label> <input
+				type="text" class="form-control" id="" placeholder="enter attendeeName" name="name">
 		</div>
 		<div>
 			<select class="form-select" aria-label="default select example"
-				name="type">
-				<option selected>Select Food Type</option>
-				<option value="Veg">Veg</option>
-				<option value="Non-Veg">Non-Veg</option>
-				<option value="Both">Both</option>
+				name="company">
+				<option selected>Select Company</option>
+				<option value="TCS">TCS</option>
+				<option value="Infosys">Infosys</option>
+				<option value="wipro">wipro</option>
 			</select>
 		</div>
-		<div>
-			<label for="customRange2" class="form-label">Quantity</label> <input
-				type="range" class="form-range" min="0" max="5" 
-				id="customRange1" name="quantity">
-		</div>
 		<div class="mb-3">
-			<label for="foodItemPrice" class="form-label">Price</label> <input
-				type="text" class="form-control" name="price"
-				id="foodItemPrice" placeholder="enter food item price">
+			<label for="position" class="form-label">Role</label> <input
+				type="text" class="form-control" id="" placeholder="enter role" name="role">
 		</div>
 		<div>
 		<button type="submit" value="send" class="btn btn-dark">order</button>
 		</div>
-	</form>
+		</form>
 </body>
 </html>

@@ -22,6 +22,7 @@
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
 				alt="" width="80" height="48" class="d-inline-block align-text-top">
 			</a> <a href="FoodItem.jsp">Food Item</a>
+			<a href="Interview.jsp">Interview</a>
 		</div>
 	</nav>
 	<h1>This is spring with boot strap</h1>
