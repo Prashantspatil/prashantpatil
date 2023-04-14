@@ -18,6 +18,7 @@ public class GmailRunner {
 		gmailRepository.create("siddu.xworkz@gmail.com");
 		gmailRepository.create("yeddi.xworkz@gmail.com");
 		gmailRepository.create("basu.xworkz@gmail.com");
+		gmailRepository.create("tanu.xworkz@gmail.com");
 		System.out.println(System.lineSeparator());
 		System.out.println("total gmails : "+gmailRepository.totalGmails());
 

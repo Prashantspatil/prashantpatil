@@ -1,0 +1,11 @@
+com\xworkz\signup\dto\SignUpDTO.class
+com\xworkz\signup\dto\AuditDTO.class
+com\xworkz\signup\resource\SignUpResource.class
+com\xworkz\signup\configuration\SignUpWebInit.class
+com\xworkz\signup\configuration\SignUpConfiguration.class
+com\xworkz\signup\controller\SignUpController.class
+com\xworkz\signup\repository\SignUpRepository.class
+com\xworkz\signup\repository\SignUpRepositoryImpl.class
+com\xworkz\signup\service\SignUpService.class
+com\xworkz\signup\service\SignUpServiceImpl.class
+com\xworkz\signup\entity\SignUpEntity.class

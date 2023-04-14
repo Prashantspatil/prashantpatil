@@ -22,9 +22,9 @@ public class PanCardRepositoryImpli implements PanCardRepository{
 	
 	@Override
 	public int total() {
-		return PanCardRepository.super.total();
-		//System.out.println("running total");
-		//return this.panCardIndex;
+		//return PanCardRepository.super.total();
+		System.out.println("running total");
+		return this.panCardIndex;
 	}
 
 }
